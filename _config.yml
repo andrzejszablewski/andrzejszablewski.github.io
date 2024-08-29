@@ -10,7 +10,7 @@
 locale                   : "en-UK"
 title                    : "Andrzej Szablewski"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Andrzej Szablewski"
 description              : &description "Personal website"
 url                      : https://andrzejszablewski.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
