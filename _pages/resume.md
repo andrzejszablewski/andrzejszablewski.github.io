@@ -17,6 +17,7 @@ MPhil Advanced Computer Science, University of Cambridge
 MEng Computer Science, University College London
 : _September 2020 -- June 2024_
 : - **First Class Honours** (GPA 4.0 equivalent). Average grade: 80%.
+: - Undergraduate dissertation on **Language Model Adaptation for Low-Resource African Languages** \[[pdf](/files/undergrad_dissertation.pdf) \| [code](https://github.com/TheRootOf3/low-resource-language-model-adaptation)\].
 
 ## Research experience
 
@@ -32,7 +33,7 @@ Student Research Assistant, [Natural Language Processing Research Group](https:/
 : - Experimented with several hardware and software configurations for 3D parallelism in a multi-GPU distributed environment (_Megatron Core_, _Accelerate DeepSpeed_, _FSDP_, _CUDA_).
 : - Our work is publicly available [here](https://llm.org.uk/).
 
-Summer Research Intern, Department of Computer Science, UCL
+Summer Research Internship, Department of Computer Science, UCL
 : _August 2023 -- October 2023_
 : London, UK
 : - Conducted research on multilinguality of Large Language Models. Assessed the impact of tokenisation algorithms on the performance of multilingual transformer language models.

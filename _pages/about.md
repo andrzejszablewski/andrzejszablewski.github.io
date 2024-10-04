@@ -9,7 +9,6 @@ redirect_from:
 
 I'm a Computer Science student at the University of Cambridge.
 
-I’m a Computer Science student at the University of Cambridge.
 My interests are in Deep Learning, with a particular focus on Natural Language Processing. In addition, I appreciate the awesome engineering[^1] behind the highly-performant deep learning systems!
 
 Recently, I have been working with researchers from UCL NLP on [BritLLM](https://llm.org.uk/) -- a joint effort towards producing freely available Large[^2] Language Models for UK languages[^3]. In my undergraduate dissertation, I focused on the problem of the poor availability of LLMs for low-resource languages and worked on _language model adaptation methods for African languages_. Currently, I'm working on _Data-Efficient Task Unlearning in LMs_, a method for increasing the safety of language models and removing their undesired capabilities.
