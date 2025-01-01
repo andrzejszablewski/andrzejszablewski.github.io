@@ -21,13 +21,13 @@ repository               : "andrzejszablewski/andrzejszablewski.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile_frog.jpg"
   name             : "Andrzej Szablewski"
   pronouns         : "" # example: "she/her"  
   bio              : "CS student at the University of Cambridge."
   location         : "Cambridge, UK"
   employer         : #
-  uri              : # URL
+  uri              : https://andrzejs-margheritas.vercel.app
   email            : "andrzejszablewskias[at]gmail[dot]com" 
 
   # Academic websites
@@ -290,7 +290,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
