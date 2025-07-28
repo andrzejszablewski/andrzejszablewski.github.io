@@ -12,11 +12,13 @@ redirect_from:
 ## Education
 
 MPhil Advanced Computer Science, University of Cambridge
-: _October 2024 -- Present_
+: _October 2024 -- July 2025_
+: - **Awarded Distinction.** Average grade: 81%.
+: - Dissertation on **Improving Compute-Efficiency of Federated Large Language Model Training with Heterogeneous Clients** \[[pdf](/files/mphil_dissertation.pdf) \| code coming soon!\].
 
 MEng Computer Science, University College London
 : _September 2020 -- June 2024_
-: - **First Class Honours** (GPA 4.0 equivalent). Average grade: 80%.
+: - **First Class Honours** (GPA 4.0 equivalent). **Dean’s List.** Average grade: 80%.
 : - Undergraduate dissertation on **Language Model Adaptation for Low-Resource African Languages** \[[pdf](/files/undergrad_dissertation.pdf) \| [code](https://github.com/TheRootOf3/low-resource-language-model-adaptation)\].
 
 ## Research experience
@@ -90,6 +92,14 @@ Summer Studentship Intern, UCL
   {% endfor %}</ul>
 
 ## Service and leadership
+
+Tutorial Lead, Girls Who ML Workshop @ Cambridge
+: March 2025
+: - Conducted a workshop on Transformers & Introduction to NLP. [Slides](https://docs.google.com/presentation/d/1kxCyP_-sjHOJk7wURyijIttjf28dZHVZ3r1q4BByvcg/edit?usp=sharing).
+
+Tutorials Lead, Cambridge MedTech Foundation
+: October 2024 -- December 2024
+: - Conducted 3 tutorials and workshops programming and machine learning fundamentals. [Slides and workshop notebooks](https://github.com/TheRootOf3/cam-coding-ml-workshops).
 
 Co-lead of the [Programming Tutor Initiative](https://www.ucl.ac.uk/computer-science/news/2022/mar/programming-tutor-scheme-peer-peer-support-new-undergraduate-students), UCL
 : August 2022 -- April 2024
