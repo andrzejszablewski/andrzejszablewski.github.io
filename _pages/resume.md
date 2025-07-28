@@ -24,7 +24,7 @@ MEng Computer Science, University College London
 ## Research experience
 
 Student Research Assistant, [Natural Language Processing Research Group](https://nlp.cs.ucl.ac.uk/), Department of Computer Science, UCL
-: _October 2023 -- Present_
+: _October 2023 -- September 2024_
 : London, UK
 : **Data-Efficient Task Unlearning in Language Models**
 : - Applied state-of-the-art optimisation-based machine unlearning methods to improve safety of a 1.3B parameter LLM.
@@ -94,24 +94,24 @@ Summer Studentship Intern, UCL
 ## Service and leadership
 
 Tutorial Lead, Girls Who ML Workshop @ Cambridge
-: March 2025
+: _March 2025_
 : - Conducted a workshop on Transformers & Introduction to NLP. [Slides](https://docs.google.com/presentation/d/1kxCyP_-sjHOJk7wURyijIttjf28dZHVZ3r1q4BByvcg/edit?usp=sharing).
 
 Tutorials Lead, Cambridge MedTech Foundation
-: October 2024 -- December 2024
+: _October 2024 -- December 2024_
 : - Conducted 3 tutorials and workshops programming and machine learning fundamentals. [Slides and workshop notebooks](https://github.com/TheRootOf3/cam-coding-ml-workshops).
 
 Co-lead of the [Programming Tutor Initiative](https://www.ucl.ac.uk/computer-science/news/2022/mar/programming-tutor-scheme-peer-peer-support-new-undergraduate-students), UCL
-: August 2022 -- April 2024
+: _August 2022 -- April 2024_
 : - Co-organised a hiring process and managed the tutoring scheme at the university for more than 200 tutees and 20 tutors.
 : - In free time, built a [cool website](https://uclcshub.github.io) providing information and additional resources to the computer science undergraduates in the department.
 
 Head of Development, [UCL AI Society](https://uclaisociety.co.uk/)
-: August 2023 -- June 2024
+: _August 2023 -- June 2024_
 : - Led the society's Development Team, supporting initiatives such as [ClimateHack.AI 2023](https://climatehack.ai/competition/2023-24) and [ML Tutorial Series](https://uclaisociety.co.uk/our-initiatives/tutorials/).
 : - Gave a guest talk on Natural Language Processing in the ML Tutorial Series, as well as appeared during the [Introduction to Python](https://youtu.be/adnK-hc2DmY?feature=shared&t=75) and the ClimateHack.AI 2023 Workshop!
 
 Head of IT, [UCL Leaders Conference](https://uclleaders.co.uk/2023/)
-: October 2022 -- January 2023
+: _October 2022 -- January 2023_
 : - Coordinated the essential technical support for conference speakers and attendees during the event.
 : - Developed [another cool website](https://uclleaders.co.uk/2023/) for the 2023 edition.
