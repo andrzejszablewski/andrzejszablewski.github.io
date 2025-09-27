@@ -15,7 +15,9 @@ I'm a recent Computer Science graduate from the University of Cambridge.
 
 ## Research updates
 
+- 2025-09-23: [Activation Transport Operators](https://arxiv.org/abs/2508.17540) will be presented as Spotlight at the Mechanistic Interpretability Workshop at NeurIPS 2025 🎉
 - 2025-08-24: Our recent work "Activation Transport Operators" on transporting SAE features across transformer layers is available! \[[arxiv](https://arxiv.org/abs/2508.17540) \| [code](https://github.com/marek357/activation-transport-operators)\]
+
 
 
 ## More about me

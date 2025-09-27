@@ -14,7 +14,7 @@ redirect_from:
 MPhil Advanced Computer Science, University of Cambridge
 : _October 2024 -- July 2025_
 : - **Awarded Distinction.** Average grade: 81%.
-: - Dissertation on **Improving Compute-Efficiency of Federated Large Language Model Training with Heterogeneous Clients** \[[pdf](/files/mphil_dissertation.pdf) \| code coming soon!\].
+: - Dissertation on **Improving Compute-Efficiency of Federated Large Language Model Training with Heterogeneous Clients** \[[pdf](/files/mphil_dissertation.pdf)\].
 
 MEng Computer Science, University College London
 : _September 2020 -- June 2024_
