@@ -100,6 +100,63 @@
   }
 }
 
+/* Avatar flip animation */
+.avatar-flip-container {
+  perspective: 1000px;
+  display: inline-block;
+  position: relative;
+}
+
+.avatar-flipper {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Desktop hover effect */
+@media (hover: hover) and (pointer: fine) {
+  .avatar-flip-container:hover .avatar-flipper {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Mobile/touch effect - toggle on tap */
+@media (hover: none), (pointer: coarse) {
+  .avatar-flip-container.flipped .avatar-flipper {
+    transform: rotateY(180deg);
+  }
+}
+
+.avatar-front,
+.avatar-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  img {
+    max-width: 175px;
+    border-radius: 50%;
+    display: block;
+
+    @include breakpoint($large) {
+      padding: 5px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.avatar-front {
+  position: relative;
+}
+
+.avatar-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+
+
 .author__content {
   display: table-cell;
   vertical-align: top;

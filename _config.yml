@@ -21,7 +21,8 @@ repository               : "andrzejszablewski/andrzejszablewski.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_frog.jpg"
+  avatar           : "profile_coffee.jpg"
+  avatar_reverse           : "profile_frog.jpg"
   name             : "Andrzej Szablewski"
   pronouns         : "" # example: "she/her"  
   bio              : "CS graduate from the University of Cambridge."
