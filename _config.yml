@@ -22,10 +22,10 @@ repository               : "andrzejszablewski/andrzejszablewski.github.io"
 author:
   # Biographic information
   avatar           : "profile_coffee.jpg"
-  avatar_reverse           : "profile_frog.jpg"
+  avatar_reverse   : "profile_frog.jpg"
   name             : "Andrzej Szablewski"
   pronouns         : "" # example: "she/her"  
-  bio              : "CS graduate from the University of Cambridge."
+  bio              : "CS @ University of Cambridge"
   location         : "Cambridge, UK"
   employer         : #
   uri              : http://therootof3.github.io/pizza

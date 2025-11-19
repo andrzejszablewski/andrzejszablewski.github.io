@@ -9,9 +9,9 @@ redirect_from:
 
 I'm a recent Computer Science graduate from the University of Cambridge.
 
-**I want to understand how cognitive abilities form in deep neural networks.** Currently, I'm exploring how the mechanistic[^1] aspects of model interpretability can aid in these efforts. I also appreciate the awesome, research-driven engineering[^2] behind the highly-performant deep learning systems! 
+**I aim to understand how cognitive abilities form in deep neural networks.** Motivated by both curiosity about their internal mechanisms and the challenges of AI safety, my current work explores how mechanistic[^1] interpretability can support these goals. I also appreciate the awesome, research-driven engineering[^2] behind the highly-performant deep learning systems!
 
-**Please, don't hesitate to reach out or connect!** I'm very happy to hear about your research, tell you a bit about mine, or just chat about *anything* interesting!
+**Please, don't hesitate to [reach out](mailto:andrzejszablewskias[at]gmail[dot]com)!** I'm very happy to hear about your research, tell you a bit about mine, or just chat about *anything* interesting!
 
 ## Research updates
 
