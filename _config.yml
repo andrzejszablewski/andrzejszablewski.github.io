@@ -25,8 +25,9 @@ author:
   avatar_reverse   : "profile_frog.jpg"
   name             : "Andrzej Szablewski"
   pronouns         : "" # example: "she/her"  
-  bio              : "CS @ University of Cambridge"
-  location         : "Cambridge, UK"
+  bio              : "AI Safety Research @ LASR Labs"
+  # bio              : "CS @ University of Cambridge"
+  location         : "London & Cambridge, UK"
   employer         : #
   uri              : http://therootof3.github.io/pizza
   email            : "andrzejszablewskias[at]gmail[dot]com" 

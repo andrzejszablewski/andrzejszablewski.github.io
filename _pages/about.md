@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a recent Computer Science graduate from the University of Cambridge.
+I'm an AI safety researcher at LASR Labs and a recent Computer Science graduate from the University of Cambridge.
 
 **I aim to understand how cognitive abilities form in deep neural networks.** Motivated by both curiosity about their internal mechanisms and the challenges of AI safety, my current work explores how mechanistic[^1] interpretability can support these goals. I also appreciate the awesome, research-driven engineering[^2] behind the highly-performant deep learning systems!
 
@@ -15,6 +15,7 @@ I'm a recent Computer Science graduate from the University of Cambridge.
 
 ## Research updates
 
+- 2026-01: Joined [LASR Labs](https://www.lasrlabs.org) to work on technical AI safety research. London, UK! 🇬🇧
 - 2025-12: Presented [Activation Transport Operators](https://arxiv.org/abs/2508.17540) as **Spotlight** at the Mechanistic Interpretability Workshop at NeurIPS 2025 in San Diego, US! 🎉🇺🇸 \[[poster](/files/poster_ato25.pdf)\]
 - 2025-08: Our recent work "Activation Transport Operators" on transporting SAE features across transformer layers is available! \[[arxiv](https://arxiv.org/abs/2508.17540) \| [code](https://github.com/marek357/activation-transport-operators)\]
 - 2025-07: Presented my [MPhil dissertation](/files/mphil_dissertation.pdf) at MobiUK 2025 in Edinburgh, UK! 🇬🇧 \[[poster](/files/poster_mobiuk25.pdf)\]
