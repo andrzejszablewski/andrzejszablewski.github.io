@@ -15,6 +15,9 @@ I'm an AI safety researcher at LASR Labs and a recent Computer Science graduate 
 
 ## Research updates
 
+- 2026-05: Serving as a reviewer for the [ICML 2026 Mechanistic Interpretability Workshop](https://mechinterpworkshop.com).
+- 2026-05: Participating in the [Research Accelerator Week](https://www.meridiancambridge.org/research-accelerator-week). Cambridge, UK! 🇬🇧
+- 2026-04: **Secured ~£200k funding** for continuing our team's work on model organism research throughout LASR Extension. London, UK! 🇬🇧
 - 2026-01: Joined [LASR Labs](https://www.lasrlabs.org) to work on technical AI safety research. London, UK! 🇬🇧
 - 2025-12: Presented [Activation Transport Operators](https://arxiv.org/abs/2508.17540) as **Spotlight** at the Mechanistic Interpretability Workshop at NeurIPS 2025 in San Diego, US! 🎉🇺🇸 \[[poster](/files/poster_ato25.pdf)\]
 - 2025-08: Our recent work "Activation Transport Operators" on transporting SAE features across transformer layers is available! \[[arxiv](https://arxiv.org/abs/2508.17540) \| [code](https://github.com/marek357/activation-transport-operators)\]
