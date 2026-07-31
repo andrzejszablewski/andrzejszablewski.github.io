@@ -18,12 +18,14 @@ I'm an AI safety researcher at LASR Labs and a recent Computer Science graduate 
 
 ## Research updates
 
+- 📊 2026-07: [LangMAP](https://arxiv.org/abs/2606.23566) will be presented as a **poster** at the [2nd Tokenization Workshop at COLM 2026](https://tokenization-workshop.github.io)! San Francisco, USA 🇺🇸
+- 💰 2026-07: **Secured ~£14k funding** with [Marek Masiak](https://www.linkedin.com/in/marekmasiak/) for further research on the interpretable-by-design TopKLoRA fine-tuning method.
 - 📊 2026-07: Presenting [The Model Organism Lottery 🎲](https://arxiv.org/abs/2607.01033) **poster** at the [ICML 2026](https://icml.cc/Conferences/2026) _Mechanistic Interpretability Workshop on Friday 11am-12pm_ in Seoul, South Korea! 🎉🇰🇷 
 - 📄 2026-07: "The Model Organisms Lottery 🎲" on unrealistically easily interpretable model organisms for AI safety is here! \[[arxiv](https://arxiv.org/abs/2607.01033) \| [code](https://github.com/model-organisms-for-real/model-organism-lottery)\]
 - 📄 2026-06: [LangMAP](https://arxiv.org/abs/2606.23566), our collaborative (Cambridge-ETH-EPFL) work towards an alternative tokenisation paradigm for multilingual LLMs has shipped! \[[arxiv](https://arxiv.org/abs/2606.23566)\] 🇬🇧🇨🇭
 - 2026-05: Serving as a reviewer for the [ICML 2026 Mechanistic Interpretability Workshop](https://mechinterpworkshop.com).
 - 2026-05: Participating in the [Research Accelerator Week](https://www.meridiancambridge.org/research-accelerator-week). Cambridge, UK! 🇬🇧
-- 2026-04: **Secured ~£200k funding** for continuing our team's work on model organism research throughout LASR Extension. London, UK! 🇬🇧
+- 💰 2026-04: **Secured ~£200k funding** for continuing our team's work on model organism research throughout LASR Extension. London, UK! 🇬🇧
 
 <details class="updates-more" markdown="1">
 <summary>See previous updates</summary>
