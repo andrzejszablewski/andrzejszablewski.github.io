@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a first-year PhD student in Computer Science at the University of Cambridge. Previously, I worked on AI safety research at LASR in London.
+I'm a first-year [PhD student in Computer Science at the University of Cambridge](https://www.cst.cam.ac.uk/people/as3623). Previously, I worked on AI safety research at LASR in London. I am a member of [LISA](https://www.safeai.org.uk).
 
 **I find neural networks really cool and work on making LLMs safe.** Driven both by curiosity about their internal mechanisms and by concern for their safe deployment, I currently explore how white-box interpretability methods can aid alignment and monitoring. I also appreciate the awesome, research-driven engineering[^1] behind highly performant deep learning systems!
 
@@ -55,5 +55,5 @@ Previously, I have been working with researchers from UCL NLP on [BritLLM](https
 [^1]: [Awesome Engineering!](https://huggingface.co/blog/bloom-megatron-deepspeed)
 [^2]: Kaushik, another LASR fellow, wrote a good [retrospective on his experience at LASR](https://www.lesswrong.com/posts/CCxB3e2oL8yeLKESH/lasr-retrospective-and-advice).
 [^3]: <del>Write-up in progress.</del> **Update:** It's arrived!
-[^4]: As of the time of writing (2024-08-27), 3 billion parameters make the model be considered _large_. **Update**: As of 2025-07-28, a 3B model is still pretty big. **Update 2**: Reflecting on this during ICML 2026, I still think that 3B is quite substantial...
+[^4]: As of the time of writing (2024-08-27), 3 billion parameters make the model be considered _large_. **Update**: As of 2025-07-28, a 3B model is still pretty big. Reflecting on this **during ICML 2026**, I still think that 3B is quite substantial. In **September 2026**, [I worked with a 1.7B model](https://www.lesswrong.com/posts/EmcEPCFSKKMtCBBkw/thought-anchors-don-t-transfer-between-models) and even that was quite sizeable!
 [^5]: Isn't this just... English?! Explore [our work](https://llm.org.uk/) to see what other languages are spoken in the UK!
