@@ -29,7 +29,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : "Fraunces", $serif; // self-hosted, see _sass/_headings.scss
 $caption-font-family        : $serif;
 
 /* type scale */
