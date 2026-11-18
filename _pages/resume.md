@@ -1,4 +1,5 @@
 ---
+published: false
 # layout: archive
 title: "Resume"
 # permalink: /resume/

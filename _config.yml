@@ -8,10 +8,11 @@
 
 # Basic Site Settings
 locale: "en-UK"
+og_locale: "en_GB" # Open Graph needs language_TERRITORY with an ISO country code
 title: "Andrzej Szablewski"
 title_separator: "-"
 name: &name "Andrzej Szablewski"
-description: &description "Personal website"
+description: &description "PhD student in Computer Science at the University of Cambridge, working on interpretability and AI safety."
 url: https://andrzejszablewski.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "andrzejszablewski/andrzejszablewski.github.io"
@@ -21,8 +22,8 @@ repository: "andrzejszablewski/andrzejszablewski.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile_coffee.jpg"
-  avatar_reverse: "profile_frog.jpg"
+  avatar: "profile_coffee_400.jpg"
+  avatar_reverse: "profile_frog_400.jpg"
   name: "Andrzej Szablewski"
   pronouns: "" # example: "she/her"
   bio: "PhD CS Student @ Cambridge"
@@ -118,7 +119,7 @@ staticman:
       options:
         format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide: false # change to true to hide the RSS feed in the footer
+  hide: true # change to true to hide the RSS feed (footer link and <head> tag)
   path: # blank (default) uses feed.xml
 
 # SEO Related
@@ -129,18 +130,22 @@ yandex_site_verification:
 
 # Social Sharing
 twitter:
-  username: &twitter
+  username: &twitter "A_Szablewski"
 facebook:
   username:
   app_id:
   publisher:
-og_image: # Open Graph/Twitter default site image
+og_image: "profile_coffee_800.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://github.com/therootof3"
+    - "https://scholar.google.com/citations?user=VmPfubMAAAAJ"
+    - "https://www.linkedin.com/in/andrzej-szablewski"
+    - "https://x.com/A_Szablewski"
 
 # Analytics
 analytics:
