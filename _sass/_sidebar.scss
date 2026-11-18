@@ -300,6 +300,11 @@
 
   li {
     white-space: nowrap;
+
+    /* the desktop sidebar is narrow enough to clip "London & Cambridge, UK" */
+    @include breakpoint($large) {
+      white-space: normal;
+    }
   }
 
   a {

@@ -1,4 +1,10 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script>
+  // Turn obfuscated "name[at]domain[dot]com" mailto links into working addresses
+  $('a[href^="mailto:"]').attr("href", function (i, href) {
+    return href.replace(/\[at\]/g, "@").replace(/\[dot\]/g, ".");
+  });
+</script>
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}

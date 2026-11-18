@@ -110,9 +110,9 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $brown-accent;
+$link-color                 : darken($brown-accent, 12%); // darker for WCAG AA contrast on the beige backgrounds
 $link-color-hover           : $deep-brown;
-$link-color-visited         : $brown-accent;
+$link-color-visited         : $link-color;
 $masthead-link-color        : $deep-brown;
 $masthead-link-color-hover  : $brown-accent;
 
