@@ -251,6 +251,7 @@ defaults:
       author_profile: true
       share: false
       comments: false
+      sitemap: false # not linked from any page; the Resume covers these roles
   # _publications
   - scope:
       path: ""
