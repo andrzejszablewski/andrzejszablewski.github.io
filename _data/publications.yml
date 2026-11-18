@@ -1,0 +1,81 @@
+# Publications, newest first. Rendered by _includes/publication-list.html on the homepage,
+# the Publications page (with figures) and anywhere else it is included.
+# The author whose name matches `me` is bolded; authors are joined as "A., B. and C.".
+# A trailing "*" on an author marks equal contribution (a note is added under the list).
+# `figure` is the entry's key figure (usually Figure 1), shown when the list is included with figures=true.
+# `note` adds a short line under the venue; the year is only printed when the venue doesn't already contain it.
+# `posts` (blog posts, newest first) use the same fields, with `url` and `date` instead of `year`;
+# they are listed on the Publications page.
+
+me: "Szablewski A."
+
+papers:
+  - title: "Interpretable Sparse Fine-Tuning with TopKLoRA Enables Faithful Circuit Discovery"
+    authors: ["Masiak M.*", "Szablewski A.*", "Cancedda N.", "Venhoff C."]
+    venue: "Preprint, under review"
+    year: 2026
+    figure: "/images/publications/topklora.png"
+    links:
+      - { label: "arXiv", url: "https://arxiv.org/abs/2610.32866" }
+      - { label: "code", url: "https://github.com/interpretable-finetuning/TopKLoRA" }
+
+  - title: "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology"
+    authors: ["Szablewski A.*", "Konar-Steenberg G.*", "Fornasiere R.*", "Menon N.*", "Heimersheim S."]
+    venue: "ICML 2026 Mechanistic Interpretability Workshop"
+    year: 2026
+    figure: "/images/publications/model-organism-lottery.png"
+    links:
+      - { label: "arXiv", url: "https://arxiv.org/abs/2607.01033" }
+      - { label: "code", url: "https://github.com/model-organisms-for-real/model-organism-lottery" }
+      - { label: "poster", url: "/files/poster_model_organism_lottery_26.pdf" }
+      - { label: "blog", url: "https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability" }
+
+  - title: "LangMAP: A Language-Adaptive Approach to Tokenization"
+    authors: ["Meister C.", "Salhan S.", "Szablewski A.", "Lesci P.", "Buttery P.", "Pimentel T."]
+    venue: "EMNLP 2026 (main conference)"
+    note: "Also presented at the COLM 2026 Tokenization Workshop."
+    year: 2026
+    highlight: "Oral"
+    figure: "/images/publications/langmap.png"
+    links:
+      - { label: "arXiv", url: "https://arxiv.org/abs/2606.23566" }
+      - { label: "code", url: "https://github.com/cimeister/unimixlm" }
+
+  - title: "Activation Transport Operators"
+    authors: ["Szablewski A.*", "Masiak M.*"]
+    venue: "NeurIPS 2025 Mechanistic Interpretability Workshop"
+    year: 2025
+    highlight: "Spotlight"
+    figure: "/images/publications/activation-transport-operators.png"
+    links:
+      - { label: "arXiv", url: "https://arxiv.org/abs/2508.17540" }
+      - { label: "code", url: "https://github.com/marek357/activation-transport-operators" }
+      - { label: "poster", url: "/files/poster_ato25.pdf" }
+
+posts:
+  - title: "Thought anchors don't transfer between models"
+    authors: ["Szablewski A."]
+    venue: "LessWrong"
+    date: "Sep 2026"
+    figure: "/images/publications/blog-thought-anchors.png"
+    url: "https://www.lesswrong.com/posts/EmcEPCFSKKMtCBBkw/thought-anchors-don-t-transfer-between-models"
+    links:
+      - { label: "LessWrong", url: "https://www.lesswrong.com/posts/EmcEPCFSKKMtCBBkw/thought-anchors-don-t-transfer-between-models" }
+
+  - title: "Activation Oracles significantly underperform without a safe base model"
+    authors: ["Fornasiere R.", "Menon N.", "Szablewski A.", "Konar-Steenberg G.", "Heimersheim S."]
+    venue: "LessWrong"
+    date: "Aug 2026"
+    figure: "/images/publications/blog-activation-oracles.png"
+    url: "https://www.lesswrong.com/posts/3X5EFjiHgxdNowrTA/activation-oracles-significantly-underperform-without-a-safe"
+    links:
+      - { label: "LessWrong", url: "https://www.lesswrong.com/posts/3X5EFjiHgxdNowrTA/activation-oracles-significantly-underperform-without-a-safe" }
+
+  - title: "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology"
+    authors: ["Konar-Steenberg G.", "Szablewski A.", "Fornasiere R.", "Menon N.", "Heimersheim S."]
+    venue: "LessWrong"
+    date: "Jul 2026"
+    figure: "/images/publications/blog-model-organism-lottery.png"
+    url: "https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability"
+    links:
+      - { label: "LessWrong", url: "https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability" }
