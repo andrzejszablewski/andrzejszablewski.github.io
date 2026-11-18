@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Resume page, see _pages/cv.html and _data/cv.yml
+   ========================================================================== */
+
+.page__content .cv-updated {
+  font-size: $type-size-6;
+  font-style: italic;
+}
+
+.cv h2 {
+  margin-top: 1.5em;
+  font-size: $type-size-4;
+}
+
+/* Title + organisation on the left, dates + location on the right */
+.cv-entry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;   // dates line up with the title, locations with the organisation
+  column-gap: 1em;
+  margin-bottom: 0.9em;
+}
+
+.cv-entry__what {
+  flex: 1 1 20em;
+}
+
+.cv-entry__title {
+  display: block;
+  font-weight: bold;
+}
+
+.cv-entry__org,
+.cv-entry__location {
+  font-style: italic;
+}
+
+.cv-entry__org {
+  display: block;
+  font-size: 0.9em;
+}
+
+.cv-entry__note {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.cv-entry__when {
+  color: mix($deep-brown, $warm-beige, 88%); // the same muted brown as the research-update dates
+  font-size: 0.9em;
+
+  > span + span::before {
+    content: " · ";
+  }
+}
+
+@include breakpoint($small) {
+  .cv-entry__when {
+    text-align: right;
+    white-space: nowrap;
+
+    > span {
+      display: block;
+    }
+
+    > span + span::before {
+      content: none;
+    }
+  }
+}
+
+/* One-line rows for service, awards and schools */
+.cv-section--compact {
+  .cv-entry {
+    margin-bottom: 0.4em;
+  }
+
+  .cv-entry__title {
+    font-weight: normal;
+  }
+}
+
+.page__content .cv-skills {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.3em 1em;
+
+  dt {
+    margin: 0;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 1em;
+  }
+}
