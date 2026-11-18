@@ -1,22 +1,45 @@
 /* ==========================================================================
-   Research updates card + collapsible "See previous updates" disclosure
+   Research updates + collapsible "See previous updates" disclosure
+   (entries live in _data/news.yml, markup in _includes/news.html)
    ========================================================================== */
 
-/* The rounded, slightly-darker card wrapping the whole section */
+$news-date-color: mix($deep-brown, $warm-beige, 88%); // #7c604f: 4.7:1 on the update boxes
+
 .research-updates {
-  background-color: $warm-beige;
-  border: 1px solid $border-color;
-  border-radius: $border-radius * 2.5;   // ~10px, softly rounded
-  padding: 0.5em 1.25em 1em;
   margin: 1.5em 0;
+}
 
-  > h2:first-child {
-    margin-top: 0.75em;
-  }
+/* One box per update: the date sits above the text on phones, and from $small up
+   in a fixed-width, muted column with wrapped lines hanging under the text */
+.news {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  > ul {
-    margin-bottom: 0;
+.news__item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0 0 0.45em;
+  padding: 0.5em 0.75em 0.5em 0.9em;
+  border-left: 3px solid $brown-accent;
+  border-radius: 0 ($border-radius * 1.5) ($border-radius * 1.5) 0;
+  background-color: $warm-beige;
+  line-height: 1.5;
+
+  @include breakpoint($small) {
+    grid-template-columns: 4em minmax(0, 1fr); // fits "May 2026" with room for wider fonts
+    column-gap: 0.75em;
+    align-items: baseline;               // smaller date sits on the text's first line
   }
+}
+
+.news__date {
+  color: $news-date-color;
+  font-size: $type-size-6;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .updates-more {
@@ -68,12 +91,16 @@
   }
 
   /* The revealed list */
-  ul {
+  .news {
     margin-top: 1em;
     padding-top: 0.75em;
     border-top: 1px solid $border-color;
     text-align: left;                    // restore normal list alignment
     animation: updates-more-fade 0.2s ease;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
   }
 }
 

@@ -17,29 +17,7 @@ I'm a first-year [PhD student in Computer Science at the University of Cambridge
 
 ## Research updates
 
-- 2026-11: Accepted to **Neel Nanda's MATS 12 stream**!
-- 2026-10: "Interpretable sparse fine-tuning with TopKLoRA enables faithful circuit discovery" preprint is here! \[[arxiv](https://arxiv.org/abs/2610.32866) \| [code](https://github.com/interpretable-finetuning/TopKLoRA)\]
-- 2026-09: Accepted to **Neel Nanda's MATS 12 Exploration Phase**.
-- 2026-09: Serving as a reviewer for ICLR 2027.
-- 2026-08: [LangMAP](https://arxiv.org/abs/2606.23566) will be presented as an **oral** at [EMNLP 2026](https://2026.emnlp.org) in Budapest, Hungary 🇭🇺 and as a **poster** at the [2nd Tokenization Workshop at COLM 2026](https://tokenization-workshop.github.io) in San Francisco, USA 🇺🇸
-- 2026-07: **Secured ~£14k funding** with [Marek Masiak](https://www.linkedin.com/in/marekmasiak/) for further research on the interpretable-by-design TopKLoRA fine-tuning method.
-- 2026-07: Presented [The Model Organism Lottery 🎲](https://arxiv.org/abs/2607.01033) **poster** at the [ICML 2026](https://icml.cc/Conferences/2026) _Mechanistic Interpretability Workshop_ in Seoul, South Korea! 🎉🇰🇷 
-- 2026-07: "The Model Organism Lottery 🎲" on unrealistically easily interpretable model organisms for AI safety is here! \[[arxiv](https://arxiv.org/abs/2607.01033) \| [code](https://github.com/model-organisms-for-real/model-organism-lottery)\]
-- 2026-04: **Secured ~£200k funding** for continuing our team's work on model organism research throughout LASR Extension. London, UK! 🇬🇧
-
-<details class="updates-more" markdown="1">
-<summary>See previous updates</summary>
-
-- 2026-06: [LangMAP](https://arxiv.org/abs/2606.23566), our collaborative (Cambridge-ETH-EPFL) work towards an alternative tokenisation paradigm for multilingual LLMs has shipped! \[[arxiv](https://arxiv.org/abs/2606.23566)\] 🇬🇧🇨🇭
-- 2026-05: Serving as a reviewer for the [ICML 2026 Mechanistic Interpretability Workshop](https://mechinterpworkshop.com).
-- 2026-05: Participating in the [Research Accelerator Week](https://www.meridiancambridge.org/research-accelerator-week). Cambridge, UK! 🇬🇧
-- 2026-01: Joined [LASR Labs](https://www.lasrlabs.org) to work on technical AI safety research. London, UK! 🇬🇧
-- 2025-12: Presented [Activation Transport Operators](https://arxiv.org/abs/2508.17540) as **Spotlight** at the Mechanistic Interpretability Workshop at NeurIPS 2025 in San Diego, US! 🎉🇺🇸 \[[poster](/files/poster_ato25.pdf)\]
-- 2025-08: Our recent work "Activation Transport Operators" on transporting SAE features across transformer layers is available! \[[arxiv](https://arxiv.org/abs/2508.17540) \| [code](https://github.com/marek357/activation-transport-operators)\]
-- 2025-07: Presented my [MPhil dissertation](/files/mphil_dissertation.pdf) at MobiUK 2025 in Edinburgh, UK! 🇬🇧 \[[poster](/files/poster_mobiuk25.pdf)\]
-- 2024-07: Presented preliminary results for *Data-Efficient Task Unlearning* at EEML 2024 in Novi Sad, Serbia! 🇷🇸 \[[poster](/files/poster_eeml24.pdf)\]
-
-</details>
+{% include news.html %}
 
 </div>
 

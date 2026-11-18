@@ -1,0 +1,23 @@
+{%- comment -%}
+  Research updates list for the homepage card, from _data/news.yml (newest first).
+  Items flagged `collapsed: true` go under the "See previous updates" toggle.
+{%- endcomment -%}
+{%- assign recent = "" -%}
+{%- assign older = "" -%}
+{%- for n in site.data.news -%}
+{%- assign month = n.date | slice: 0, 7 -%}
+{%- capture item -%}
+<li class="news__item"><time class="news__date" datetime="{{ month }}">{{ month | append: "-01" | date: "%b %Y" }}</time> <span class="news__text">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></li>
+{% endcapture -%}
+{%- if n.collapsed -%}{%- assign older = older | append: item -%}{%- else -%}{%- assign recent = recent | append: item -%}{%- endif -%}
+{%- endfor %}
+<ul class="news" role="list">
+{{ recent }}</ul>
+{%- if older != "" %}
+
+<details class="updates-more">
+<summary>See previous updates</summary>
+<ul class="news" role="list">
+{{ older }}</ul>
+</details>
+{%- endif %}
