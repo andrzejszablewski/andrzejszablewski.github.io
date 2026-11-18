@@ -1,0 +1,385 @@
+/* ==========================================================================
+   Dark theme ("espresso"), opt-in: light is the default, and the masthead
+   toggle sets <html data-theme="dark"> and remembers the choice (see
+   _includes/head/custom.html and _includes/scripts.html).
+   The theme bakes its colours in at build time, so instead of swapping the
+   variables this partial re-colours the relevant selectors. It is imported
+   late in main.scss, and :where() adds no specificity, so each rule here wins
+   over its light original by coming last.
+   Contrast ratios (WCAG AA needs 4.5:1) are against the lightest background
+   each colour sits on, i.e. the worst case.
+   ========================================================================== */
+
+$espresso-bg          : #1d1511;  // page background
+$espresso-surface     : #2a1f19;  // masthead, footer, cards, dropdowns, code
+$espresso-raised      : #36281f;  // buttons, badges, inline code
+$espresso-hover       : #423127;
+$espresso-border      : #47362b;
+$espresso-text        : #e8d9c5;  // cream: 10.2:1 on raised
+$espresso-heading     : #f5e9d9;
+$espresso-muted       : #ab9580;  // dates, captions, footnotes: 5.0:1 on raised
+$espresso-link        : #e0a96d;  // caramel: 6.8:1 on raised
+$espresso-link-hover  : #f3cf9f;  // 8.4:1 on hover
+$espresso-accent      : #c08a55;  // bars and button fills: espresso text on it is 6.0:1
+
+@media screen {  // screen only: prints stay dark-on-light
+
+  /* Page background; html:where() ties with the theme's plain `html` rule and wins by order */
+  html:where([data-theme="dark"]) {
+    background-color: $espresso-bg;
+    color-scheme: dark;  // native scrollbars and form controls follow
+  }
+
+  :where(html[data-theme="dark"]) {
+
+    /* Text and links */
+    body {
+      color: $espresso-text;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $espresso-heading;
+    }
+
+    a,
+    a:visited {
+      color: $espresso-link;
+    }
+
+    a:hover,
+    a:active {
+      color: $espresso-link-hover !important;  // the theme's hover colour is !important too
+    }
+
+    /* Links the theme lets inherit their colour; a:visited above would otherwise win */
+    u a, ins a, del a,
+    figcaption a,
+    .page__meta a,
+    .page__related a,
+    .page__footer a,
+    .author__urls a {
+      color: inherit;
+    }
+
+    ::-moz-selection {
+      color: $espresso-bg;
+      background: $espresso-link;
+    }
+
+    ::selection {
+      color: $espresso-bg;
+      background: $espresso-link;
+    }
+
+    u, ins, abbr[title], abbr[data-original-title] {
+      border-bottom-color: $espresso-text;
+    }
+
+    hr,
+    .page__content h2 {
+      border-color: $espresso-border;
+    }
+
+    blockquote {
+      border-left-color: $espresso-accent;
+    }
+
+    figcaption,
+    .page__meta,
+    .archive__subtitle {
+      color: $espresso-muted;
+    }
+
+    figcaption a,
+    .archive__subtitle {
+      border-bottom-color: $espresso-border;
+    }
+
+    .footnote,
+    a.reversefootnote {
+      color: $espresso-link;
+    }
+
+    .footnotes {
+      color: $espresso-muted;
+    }
+
+    /* Code */
+    p > code,
+    a > code,
+    li > code,
+    figcaption > code,
+    td > code {
+      background: $espresso-raised;
+      border-color: $espresso-border;
+      box-shadow: none;
+    }
+
+    div.highlighter-rouge,
+    figure.highlight {
+      border-color: $espresso-border;
+      background-color: $espresso-surface;
+      box-shadow: none;
+
+      &:before {
+        background-color: $espresso-raised;
+      }
+    }
+
+    /* Solarized tokens that drop below 4.5:1 on the dark code background */
+    .highlight {
+      .err, .g, .l, .n, .p, .ge, .go, .gp, .gs, .gt, .ld, .na, .nl, .nn, .nx, .py, .w, .sd, .sh {
+        color: $espresso-text;
+      }
+
+      .x, .gh, .gu, .kc, .no, .ni, .ne, .se {
+        color: #e8834f;
+      }
+
+      .gr, .kt, .sr {
+        color: #f0716c;
+      }
+    }
+
+    /* Tables */
+    table,
+    thead,
+    th,
+    td {
+      border-color: $espresso-border;
+    }
+
+    thead {
+      background-color: $espresso-surface;
+    }
+
+    /* Buttons, incl. the mobile "Follow" toggle (.btn--inverse) */
+    .btn {
+      color: $espresso-bg !important;
+      background-color: $espresso-accent;
+
+      &:hover {
+        color: $espresso-bg !important;  // beats the a:hover colour above on link buttons
+        background-color: $espresso-link;
+      }
+    }
+
+    .btn--inverse {
+      color: $espresso-text !important;
+      border-color: $espresso-accent !important;
+      background-color: $espresso-raised;
+
+      &:hover {
+        color: $espresso-bg !important;
+        background-color: $espresso-accent;
+      }
+    }
+
+    /* Masthead and the greedy-nav overflow menu */
+    .masthead {
+      background: $espresso-surface;
+      border-bottom-color: $espresso-border;
+    }
+
+    .greedy-nav {
+      background: $espresso-surface;
+
+      a {
+        color: $espresso-text;
+      }
+
+
+      .visible-links a:before {
+        background: $espresso-accent;
+      }
+
+      .hidden-links {
+        border-color: $espresso-border;
+        background: $espresso-surface;
+        box-shadow: 0 0 10px rgba(#000, 0.5);
+
+        a:hover {
+          background: $espresso-raised;
+        }
+
+        &:before {
+          border-color: $espresso-border transparent;
+        }
+
+        &:after {
+          border-color: $espresso-surface transparent;
+        }
+
+        li {
+          border-bottom-color: $espresso-border;
+        }
+      }
+    }
+
+    /* Theme toggle next to the menu: shows the sun while dark */
+    .theme-toggle {
+      border-color: $espresso-border;
+      color: $espresso-link;
+
+      &:hover {
+        background-color: $espresso-raised;
+      }
+    }
+
+    .theme-toggle__moon {
+      display: none;
+    }
+
+    .theme-toggle__sun {
+      display: block;
+    }
+
+    /* Hamburger toggle: caramel lines on a raised tile rather than a bright caramel block */
+    .greedy-nav button {
+      background-color: $espresso-raised;
+      box-shadow: inset 0 0 0 1px $espresso-border;
+    }
+
+    .navicon,
+    .navicon:before,
+    .navicon:after {
+      background: $espresso-link;
+    }
+
+    /* Sidebar: avatar ring in the accent colour; the author links become a dropdown below $large */
+    .author__avatar img {
+      border-color: $espresso-accent;
+    }
+
+    .author__urls {
+      border-color: $espresso-border;
+      background: $espresso-surface;
+      box-shadow: 0 0 10px rgba(#000, 0.5);
+
+      @include breakpoint($large) {
+        background: transparent;
+        box-shadow: none;
+      }
+
+      &:before {
+        border-color: $espresso-border transparent;
+      }
+
+      &:after {
+        border-color: $espresso-surface transparent;
+      }
+    }
+
+    /* Near-black brand icons (GitHub) would vanish, so they follow the text */
+    .social-icons .fa,
+    .social-icons .fa-github {
+      color: inherit;
+    }
+
+    /* Footer */
+    .page__footer {
+      color: $espresso-text;
+      background-color: $espresso-surface;
+      border-top-color: $espresso-border;
+    }
+
+    /* Previous/next links on the teaching pages; the disabled one stays readable */
+    .pagination {
+      border-top-color: $espresso-border;
+    }
+
+    .pagination--pager {
+      color: $espresso-link;
+      border-color: $espresso-border;
+
+      &.disabled {
+        color: $espresso-muted;
+      }
+    }
+
+    /* Research updates (one box per update), see _details.scss */
+    .news__item {
+      border-left-color: $espresso-accent;
+      background-color: $espresso-surface;
+    }
+
+    .news__date {
+      color: $espresso-muted;
+    }
+
+    .updates-more {
+      summary {
+        border-color: $espresso-border;
+        background-color: $espresso-raised;
+        color: $espresso-link;
+
+        &:hover {
+          background-color: $espresso-hover;
+          color: $espresso-link-hover;
+        }
+      }
+
+      .news {
+        border-top-color: $espresso-border;
+      }
+    }
+
+    /* Publications and blog posts, see _publications.scss */
+    .pub__body {
+      border-left-color: $espresso-border;
+    }
+
+    .page__content .pub__title {
+      color: $espresso-heading;
+    }
+
+    .pub__badge {
+      background-color: $espresso-raised;
+      color: $espresso-link-hover;
+    }
+
+    .page__content .pub__links a {
+      border-color: $espresso-border;
+
+      &:hover {
+        background-color: $espresso-raised;
+      }
+    }
+
+    /* Key figures sit on warm "paper" instead of stark white: the frame moves to the
+       link and the figure's white background multiplies into the paper tone */
+    .pub-list--figures .pub__figure {
+      padding: 0.4em;
+      border: 1px solid $espresso-border;
+      border-radius: $border-radius * 2;
+      background-color: #d6c7b2;  // dimmer than the text so large figures don't glare
+      isolation: isolate;
+    }
+
+    .pub-list--figures .pub__figure img {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+      mix-blend-mode: multiply;
+    }
+
+    /* The enlarged figure in the lightbox gets a similar warm, dimmed tone */
+    .mfp-img {
+      filter: brightness(0.85) sepia(0.15);
+    }
+
+    /* Resume, see _cv.scss */
+    .cv-entry__when {
+      color: $espresso-muted;
+    }
+  }
+
+  /* The single research-updates card from before the per-item boxes: without this,
+     cream text would sit on its light beige. Never matches the boxed list. Kept flat
+     because Ruby Sass drops the :not(:has()) part from nested selectors. */
+  :where(html[data-theme="dark"]) .research-updates:not(:has(.news)) {
+    border-color: $espresso-border;
+    background-color: $espresso-surface;
+  }
+}

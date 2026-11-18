@@ -19,6 +19,8 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    display: flex;          // menu on the left, theme toggle on the right
+    align-items: center;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
 
@@ -37,6 +39,8 @@
 }
 
 .masthead__menu {
+  flex: 1 1 auto;
+  min-width: 0;
 
   ul {
     margin: 0;
@@ -52,7 +56,47 @@
   white-space: nowrap;
 
   &--lg {
-    padding-right: 3em;
-    font-weight: 700;
+    padding-right: 1em;   // phones: the title must fit beside the menu and theme buttons,
+    font-weight: 700;     // or the greedy-nav script recurses until the stack overflows
+
+    @include breakpoint($small) {
+      padding-right: 3em;
+    }
   }
+}
+
+/* Light/dark theme toggle (see _includes/masthead.html); shows the moon while light */
+.theme-toggle {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  padding: 0;
+  border: 1px solid $dark-beige;
+  border-radius: $border-radius;
+  background-color: transparent;
+  color: $masthead-link-color;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: $medium-beige;
+  }
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.theme-toggle__sun {
+  display: none;
 }
