@@ -5,8 +5,10 @@
 <link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
 <meta name="theme-color" content="#F5E6D3">
 <script>
-  // Light theme by default; dark only once the visitor picks it with the masthead toggle.
-  // Runs before the page renders so a remembered dark choice doesn't flash light first.
+  /* Light theme by default; dark only once the visitor picks it with the masthead toggle.
+     Runs before the page renders so a remembered dark choice doesn't flash light first.
+     Block comments only: the compress layout puts each page on one line in production,
+     so a // comment would swallow the rest of the script. */
   try {
     if (localStorage.getItem("theme") === "dark") {
       document.documentElement.setAttribute("data-theme", "dark");
