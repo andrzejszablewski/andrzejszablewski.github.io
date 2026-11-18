@@ -2,6 +2,7 @@
 title: "Publications"
 description: "Papers and blog posts by Andrzej Szablewski on interpretability, AI safety and tokenization, with key figures."
 permalink: /publications/
+last_modified_at: 2026-11-18 # the sitemap's <lastmod>; update when the page changes
 author_profile: true
 ---
 
