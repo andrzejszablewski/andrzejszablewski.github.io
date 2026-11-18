@@ -1,0 +1,103 @@
+# Content of the Resume page (_pages/cv.html, served at /resume/), distilled from my latest PDF resume.
+# Each section has `entries`, or `skills` (label + items lines). Publications live on their own page.
+# Entry fields: title, org, note, location, dates; all but title are optional.
+# `compact: true` on a section renders its entries as single title + date rows.
+
+updated: "November 2026"
+
+sections:
+  - title: "Education"
+    entries:
+      - title: "PhD in Computer Science"
+        org: "University of Cambridge"
+        location: "Cambridge, UK"
+        dates: "Oct 2026 – Jun 2030 (expected)"
+      - title: "MPhil in Advanced Computer Science"
+        org: "University of Cambridge"
+        note: "Distinction"
+        location: "Cambridge, UK"
+        dates: "Oct 2024 – Jul 2025"
+      - title: "MEng in Computer Science"
+        org: "University College London"
+        note: "First Class Honours, Dean's List"
+        location: "London, UK"
+        dates: "Sep 2020 – Jun 2024"
+
+  - title: "Research Experience"
+    entries:
+      - title: "MATS 12.0 Scholar"
+        org: "MATS, Neel Nanda's stream"
+        note: "Selected after the Exploration Phase (Sep – Nov 2026)"
+        dates: "Nov 2026 – present"
+      - title: "AI Safety Researcher"
+        org: "LASR Labs, Arcadia Impact"
+        location: "London, UK"
+        dates: "Jan 2026 – Sep 2026"
+      - title: "Visiting Researcher"
+        org: "University of Cambridge, Department of Computer Science and Technology"
+        location: "Cambridge, UK"
+        dates: "Oct 2025 – Sep 2026"
+      - title: "BritLLM: Multilingual LLM Pre-training and Evaluation"
+        org: "UCL NLP"
+        location: "London, UK"
+        dates: "Oct 2023 – Jul 2024"
+
+  - title: "Industry Experience"
+    entries:
+      - title: "Software Engineering Intern"
+        org: "Google, gLinux"
+        location: "Munich, Germany"
+        dates: "Jun 2023 – Sep 2023"
+      - title: "Extreme Blue Intern"
+        org: "IBM Labs"
+        location: "Hursley, UK"
+        dates: "Jun 2022 – Sep 2022"
+      - title: "Co-Founder & Head of Data Analysis"
+        org: "MyChariti"
+        location: "London, UK"
+        dates: "Sep 2020 – Oct 2021"
+
+  - title: "Teaching & Service"
+    compact: true
+    entries:
+      - title: "Reviewer, ICLR 2027"
+        dates: "2026"
+      - title: "Reviewer, ICML 2026 Mechanistic Interpretability Workshop"
+        dates: "2026"
+      - title: "Tutorial Lead, Girls Who ML Workshop @ Cambridge"
+        dates: "2025"
+      - title: "Teaching Assistant and Senior Programming Tutor, UCL Computer Science"
+        dates: "2022 – 2024"
+      - title: "Head of Development, UCL Artificial Intelligence Society"
+        dates: "2022 – 2024"
+
+  - title: "Funding & Awards"
+    compact: true
+    entries:
+      - title: "~£200k research grant for model organism research (LASR Extension)"
+        dates: "2026"
+      - title: "~£14k research funding for TopKLoRA, with Marek Masiak"
+        dates: "2026"
+      - title: "UCL Engineering Dean's List"
+        dates: "2024"
+      - title: "IBM LabHack, First Place"
+        dates: "2022"
+      - title: "State Scholarship for Exceptionally Gifted Students, Poland"
+        dates: "2019, 2020"
+
+  - title: "Summer Schools"
+    compact: true
+    entries:
+      - title: "CMMRS 2024, Pre-doctoral Research School in Computer Science, Saarbrücken"
+        dates: "2024"
+      - title: "EEML 2024, Eastern European Machine Learning Summer School, Novi Sad"
+        dates: "2024"
+
+  - title: "Skills"
+    skills:
+      - label: "Frameworks"
+        items: "PyTorch, HuggingFace Transformers & Accelerate, DeepSpeed, scikit-learn, NumPy, Pandas"
+      - label: "Languages"
+        items: "Python, C, Go, Java, Haskell"
+      - label: "Tools"
+        items: "Git, Docker, GitHub Actions, AWS"

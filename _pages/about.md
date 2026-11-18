@@ -21,6 +21,11 @@ I'm a first-year PhD student in Computer Science at the University of Cambridge 
 
 </div>
 
+## Selected publications
+
+{% include publication-list.html figures=true equal_note=false %}
+
+Blog posts are on the [Publications](/publications/) page.
 
 ## More about me
 

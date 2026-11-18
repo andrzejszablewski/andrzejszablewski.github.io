@@ -4,6 +4,17 @@
 
 <link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
 <meta name="theme-color" content="#F5E6D3">
+<script>
+  // Light theme by default; dark only once the visitor picks it with the masthead toggle.
+  // Runs before the page renders so a remembered dark choice doesn't flash light first.
+  try {
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      document.querySelector('meta[name="theme-color"]').setAttribute("content", "#2a1f19");
+    }
+  } catch (e) {}
+</script>
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+<link rel="preload" href="{{ base_path }}/assets/fonts/fraunces/fraunces-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- end custom head snippets -->

@@ -8,6 +8,12 @@ main:
   - title: "About me"
     url: /
 
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Resume"
+    url: /resume/
+
   # - title: "Talks"
   #   url: /talks/    
 
@@ -19,9 +25,6 @@ main:
         
   # - title: "Blog Posts"
   #   url: /year-archive/
-    
-  # - title: "Resume"
-  #   url: /resume/
     
   # - title: "Guide"
   #   url: /markdown/

@@ -1,0 +1,41 @@
+---
+title: "Resume"
+description: "Resume of Andrzej Szablewski, Cambridge CS PhD student working on interpretability and AI safety."
+permalink: /resume/
+redirect_from:
+  - /cv/
+author_profile: true
+---
+
+{% assign cv = site.data.cv %}
+
+<p class="cv-updated">Last updated {{ cv.updated }}.</p>
+
+<div class="cv">
+{% for section in cv.sections %}
+  <h2>{{ section.title }}</h2>
+  {% if section.skills %}
+    <dl class="cv-skills">
+    {% for s in section.skills %}
+      <dt>{{ s.label }}</dt>
+      <dd>{{ s.items }}</dd>
+    {% endfor %}
+    </dl>
+  {% else %}
+    <div class="cv-section{% if section.compact %} cv-section--compact{% endif %}">
+    {% for e in section.entries %}
+      <div class="cv-entry">
+        <div class="cv-entry__what">
+          <span class="cv-entry__title">{{ e.title | smartify }}</span>
+          {% if e.org or e.note %}<span class="cv-entry__org">{{ e.org | smartify }}{% if e.org and e.note %} · {% endif %}{% if e.note %}<span class="cv-entry__note">{{ e.note | smartify }}</span>{% endif %}</span>{% endif %}
+        </div>
+        <div class="cv-entry__when">
+          {% if e.dates %}<span class="cv-entry__dates">{{ e.dates }}</span>{% endif %}
+          {% if e.location %}<span class="cv-entry__location">{{ e.location }}</span>{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+</div>

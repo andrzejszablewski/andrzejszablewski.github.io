@@ -4,6 +4,22 @@
   $('a[href^="mailto:"]').attr("href", function (i, href) {
     return href.replace(/\[at\]/g, "@").replace(/\[dot\]/g, ".");
   });
+
+  // Light/dark theme toggle in the masthead; the choice is remembered (see head/custom.html)
+  (function () {
+    var $root = $(document.documentElement), $toggle = $(".theme-toggle");
+    function setTheme(dark) {
+      if (dark) { $root.attr("data-theme", "dark"); } else { $root.removeAttr("data-theme"); }
+      $('meta[name="theme-color"]').attr("content", dark ? "#2a1f19" : "#F5E6D3");
+      $toggle.attr({ "aria-pressed": dark ? "true" : "false", title: dark ? "Switch to light theme" : "Switch to dark theme" });
+    }
+    setTheme($root.attr("data-theme") === "dark");
+    $toggle.on("click", function () {
+      var dark = $root.attr("data-theme") !== "dark";
+      setTheme(dark);
+      try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+    });
+  })();
 </script>
 
 {% include analytics.html %}

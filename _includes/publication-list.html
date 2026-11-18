@@ -1,0 +1,24 @@
+{%- comment -%} Usage: {% include publication-list.html %} for the papers; items=site.data.publications.posts for blog posts;
+  figures=true to show each entry's key figure; equal_note=false to keep the * marks but drop the "Equal contribution" line {%- endcomment -%}
+{%- assign pubs = site.data.publications -%}
+{%- assign items = include.items | default: pubs.papers -%}
+{%- assign all_authors = items | map: "authors" | join: "|" -%}
+<ol class="pub-list{% if include.figures %} pub-list--figures{% endif %}" role="list">
+{%- for p in items %}
+<li class="pub">
+<div class="pub__body">
+<a class="pub__title" href="{{ p.url | default: p.links[0].url }}">{{ p.title | smartify }}</a>
+<span class="pub__authors">{% for a in p.authors %}{% assign name = a | remove: "*" %}{% if forloop.last and forloop.length > 1 %} and {% elsif forloop.index > 1 %}, {% endif %}{% assign shown = name | replace: ' ', '&nbsp;' %}{% if name == pubs.me %}<strong>{{ shown }}</strong>{% else %}{{ shown }}{% endif %}{% if a contains "*" %}<sup>*</sup>{% endif %}{% endfor %}</span>
+{% assign when = p.date | default: p.year | append: "" %}<span class="pub__venue"><em>{{ p.venue }}</em>{% unless p.venue contains when %}, {{ when }}{% endunless %}{% if p.highlight %} <span class="pub__badge">{{ p.highlight }}</span>{% endif %}</span>
+{% if p.note %}<span class="pub__note">{{ p.note }}</span>{% endif %}
+{% if p.links %}<span class="pub__links">{% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %}{{ " " }}{% endunless %}{% endfor %}</span>{% endif %}
+</div>
+{%- if include.figures and p.figure %}
+<a class="pub__figure" href="{{ p.figure }}"><img src="{{ p.figure }}" alt="Key figure from {{ p.title | smartify | escape_once }}" loading="lazy"></a>
+{%- endif %}
+</li>
+{%- endfor %}
+</ol>
+{%- if all_authors contains "*" and include.equal_note != false %}
+<p class="pub-note"><sup>*</sup> Equal contribution</p>
+{%- endif %}
