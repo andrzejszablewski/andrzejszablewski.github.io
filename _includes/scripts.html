@@ -1,11 +1,13 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 <script>
-  // Turn obfuscated "name[at]domain[dot]com" mailto links into working addresses
+  /* Block comments only: the compress layout puts each page on one line in production. */
+
+  /* Turn obfuscated "name[at]domain[dot]com" mailto links into working addresses */
   $('a[href^="mailto:"]').attr("href", function (i, href) {
     return href.replace(/\[at\]/g, "@").replace(/\[dot\]/g, ".");
   });
 
-  // Light/dark theme toggle in the masthead; the choice is remembered (see head/custom.html)
+  /* Light/dark theme toggle in the masthead; the choice is remembered (see head/custom.html) */
   (function () {
     var $root = $(document.documentElement), $toggle = $(".theme-toggle");
     function setTheme(dark) {
