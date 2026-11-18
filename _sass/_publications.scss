@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Publication list (homepage and Publications page), see _includes/publication-list.html
+   ========================================================================== */
+
+.pub-list {
+  list-style: none;
+  margin: 1em 0 1.5em;
+  padding: 0;
+}
+
+.pub {
+  margin-bottom: 1.1em;
+}
+
+.pub__body {
+  padding-left: 0.9em;
+  border-left: 3px solid $medium-beige;
+
+  > span {
+    display: block;
+  }
+}
+
+.page__content .pub__title {
+  font-weight: bold;
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.pub__authors,
+.pub__venue,
+.pub__note {
+  font-size: 0.9em;
+}
+
+/* Small label for orals, spotlights etc. */
+.pub__badge {
+  display: inline-block;
+  margin-left: 0.25em;
+  padding: 0 0.5em;
+  border-radius: $border-radius;
+  background-color: $warm-beige;
+  color: $deep-brown;
+  font-size: $type-size-7;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  vertical-align: 0.1em;
+}
+
+.pub__links {
+  margin-top: 0.3em;
+
+  .page__content & a {
+    display: inline-block;
+    margin-right: 0.15em;   // plus the separating space
+    padding: 0 0.55em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: $warm-beige;
+    }
+  }
+}
+
+.page__content .pub-note {
+  margin-top: -0.75em;
+  font-size: $type-size-6;
+}
+
+/* figures=true: each paper's key figure to the right of the entry (below it on phones).
+   Figures sit on white "paper" so they stay legible on any background; click opens the lightbox. */
+.pub-list--figures {
+  .pub {
+    margin-bottom: 1.75em;
+  }
+
+  .pub__figure {
+    display: block;
+    max-width: 22em;
+    margin-top: 0.75em;
+  }
+
+  .pub__figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;    // most key figures are wide; 16:10 once they sit beside the text
+    object-fit: contain;
+    padding: 0.4em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius * 2;
+    background-color: #fff;
+  }
+}
+
+@include breakpoint($medium) {
+  .pub-list--figures .pub {
+    display: grid;
+    grid-template-columns: 1fr 13.5em;
+    column-gap: 1.25em;
+    align-items: stretch;   // the accent bar runs the full row height
+
+    .pub__figure {
+      align-self: start;
+      margin-top: 0;
+    }
+
+    .pub__figure img {
+      aspect-ratio: 16 / 10;
+    }
+  }
+}
